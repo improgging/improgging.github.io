@@ -28,6 +28,7 @@ jobs:
           MIDDLE_NAME: Gaaseidnes
           LAST_NAME: Thorsen
       - name: Secret handling
+        run: echo $SECRET is my secret
         env: 
           SECRET: ${{secrets.PASSWORD}}
       # Step 3 - Add tests and linting here
