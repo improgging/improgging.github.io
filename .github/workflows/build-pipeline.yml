@@ -32,7 +32,6 @@ jobs:
         env: 
           SECRET: ${{secrets.PASSWORD}}
       - name: Dock job 1
-        run: echo $DOCKER_USERNAME is my secret
         env: 
           DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
