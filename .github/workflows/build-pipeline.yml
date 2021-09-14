@@ -32,10 +32,11 @@ jobs:
         env: 
           SECRET: ${{secrets.PASSWORD}}
       - name: Dock job 1
+      - uses: docker/login-action@v1
         env: 
           DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
           DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-        uses: docker/login-action@v1
+       
       - name: Dock job 2
         uses: docker/metadata-action@v3
       - name: Dock job 3
