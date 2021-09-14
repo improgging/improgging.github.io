@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install dependencies
-        run: npm test
+        run: npm ci
       # Step 3 - Add tests and linting here
 
   deploy:
